@@ -9,7 +9,20 @@ import { Product } from '../shared/product.model';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent {
+   
   
+  count:number = 1
+
+
+  products:Product[] = products;
+
+  share() {
+    window.alert('The product has been shared!');
+  }
+
+  notify(){
+    window.alert("お知らせを受け取ります!")
+  }
   
   
 }
