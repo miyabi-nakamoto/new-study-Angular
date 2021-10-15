@@ -7,7 +7,7 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class ProductAlertsComponent implements OnInit {
 
-  @Input() name;
+  @Input() name!:string;
   
   constructor() { }
 
