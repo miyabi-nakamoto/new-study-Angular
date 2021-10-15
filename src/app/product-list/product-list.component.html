@@ -1,22 +1,20 @@
+<app-top-bar></app-top-bar>
+
 <h2>商品一覧</h2>
 <div *ngFor="let product of products">
-  
   <h3>
     <a [title]="product.name + ' の詳細はこちら'">
-      {{product.name}}
+      {{ product.name }}
     </a>
   </h3>
 
-  <h3>{{product.price}}円</h3>
+  <h3>{{ product.price }}円</h3>
 
-  <p *ngIf="product.description">
-    詳細：{{product.description}}
-  </p>
-  
+  <p *ngIf="product.description">詳細：{{ product.description }}</p>
+
   <button (click)="share()">シェア</button>
-
+  <app-top-bar></app-top-bar>
 </div>
-
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
