@@ -13,7 +13,7 @@
   <p *ngIf="product.description">詳細：{{ product.description }}</p>
 
   <button (click)="share()">シェア</button>
-  <app-top-bar></app-top-bar>
+  <app-product-detail [name]="product.name"></app-product-detail>
 </div>
 
 <!-- 
